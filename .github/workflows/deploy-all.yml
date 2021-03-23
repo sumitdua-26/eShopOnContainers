@@ -58,10 +58,12 @@ jobs:
         inlineScript: |          
           # Get AKS credentials for kubectl
           az aks get-credentials --resource-group $Env:CLUSTER_RESOURCE_GROUP --name $Env:CLUSTER_NAME 
-          
+                    
           # Set container registry url 
           $containerRegestry = $Env:REGISTRY_NAME + '.azurecr.io'
 
+          cd $Env:GITHUB_WORKSPACE/deploy/k8s/helm
+          
           # If DEPLOY_INFRA is true remove all services and infrastructure then deploy all services and infrastructure 
           if($Env:DEPLOY_INFRA -eq '$true')
           {

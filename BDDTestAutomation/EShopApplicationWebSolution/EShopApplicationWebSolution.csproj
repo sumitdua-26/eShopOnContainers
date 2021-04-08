@@ -26,6 +26,7 @@
   <ItemGroup>
     <PackageReference Include="Bdd.Core.Generator.SpecFlowPlugin" Version="3.0.15-preview" />
     <PackageReference Include="Bdd.Core.Web" Version="3.0.15-preview" />
+    <PackageReference Include="Bdd.Core.Api" Version="3.0.15-preview" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="NLog" Version="4.7.6" />
     <PackageReference Include="NUnit" Version="3.12.0" />
@@ -90,7 +91,9 @@
 
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Features\ApiTests\" />
     <Folder Include="Hooks\" />
+    <Folder Include="StepDefinitions\ApiTests\" />
     <Folder Include="TestData\Before\" />
     <Folder Include="TestData\After\" />
     <Folder Include="TestData\Input\" />

@@ -43,8 +43,7 @@ namespace EShopApplicationWebSolution.StepDefinitions.ApiTests
             this.httpResponse = await this.ApiExecutor.GetResponseAsync(this.url, this.UserDetails);
 
             this.ScenarioContext["responsestatuscode"] = (int)this.httpResponse.StatusCode;
-            this.ScenarioContext["jsonResponse"] = JObject.Parse(await this.httpResponse.Content.ReadAsStringAsync());
-            this.responseObject = (JObject)this.ScenarioContext["jsonResponse"];
+            this.ScenarioContext["jsonResponse"] = await this.httpResponse.Content.ReadAsStringAsync();
         }
 
         [When(@"the page index is (.*)")]

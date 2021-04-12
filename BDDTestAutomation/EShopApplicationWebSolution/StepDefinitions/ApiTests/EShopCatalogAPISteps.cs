@@ -28,34 +28,29 @@ namespace EShopApplicationWebSolution.StepDefinitions.ApiTests
         private HttpResponseMessage httpResponse;
         private JObject responseObject;
 
-        [Given(@"user wants to get Catalog types")]
-        [Given(@"user wants to get catalog items")]
-        public void GivenUserWantsToGetCatalog()
+        [Given(@"user wants to get Catalog types through ""(.*)"" API")]
+        [Given(@"user wants to get catalog items through ""(.*)"" API")]
+        public void GivenUserWantsToGetCatalog(string apiName)
         {
             this.endpoint = ConfigurationManager.AppSettings.Get("EShopEndpoint");
+            this.url = this.endpoint + ConfigurationManager.AppSettings.Get(apiName.Replace(" ", ""));
         }
 
-        [When(@"""(.*)"" API is called")]
-        public async System.Threading.Tasks.Task WhenAPIIsCalledAsync(string apiName)
+        [When(@"catalog types API is called")]
+        [When(@"catalog items API is called")]
+        public async System.Threading.Tasks.Task WhenAPIIsCalledAsync()
         {
-            this.url = this.endpoint + ConfigurationManager.AppSettings.Get(apiName.Replace(" ", ""));
-
             this.httpResponse = await this.ApiExecutor.GetResponseAsync(this.url, this.UserDetails);
 
             this.ScenarioContext["responsestatuscode"] = (int)this.httpResponse.StatusCode;
             this.ScenarioContext["jsonResponse"] = await this.httpResponse.Content.ReadAsStringAsync();
         }
 
-        [When(@"the page index is (.*)")]
-        public void WhenThePageIndexIs(int pageIndex)
+        [When(@"the ""(.*)"" is ""(.*)""")]
+        public void WhenThePageIndexIs(string parameterName, string parameterValue)
         {
-            
-        }
-
-        [When(@"the page size is (.*)")]
-        public void WhenThePageSizeIs(int pageSize)
-        {
-            
+            string entityToAppend = parameterName.Replace(" ", "") + "=" + parameterValue;
+            this.endpoint = this.endpoint + entityToAppend + "&";
         }
 
         [Then(@"the api should return ""(.*)"" response")]

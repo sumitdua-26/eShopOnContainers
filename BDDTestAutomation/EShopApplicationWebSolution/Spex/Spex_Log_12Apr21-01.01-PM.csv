@@ -1,0 +1,3 @@
+id,feature,scenario,isBackground,isNew,needsUpdate,testPlanId,testSuiteId,testCaseId,result
+,Login_EShopApplication,Verify that a registered user is able to login into EShop application,False,,False,,,,Object reference not set to an instance of an object.
+,Login_EShopApplication,Verify that the user is unable to login to EShop Application if user is not registered already,False,,False,,,,Object reference not set to an instance of an object.

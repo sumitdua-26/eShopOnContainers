@@ -117,34 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Bing" xml:space="preserve">
-    <value>http://www.bing.com</value>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
   </data>
-  <data name="browse" xml:space="preserve">
-    <value>xpath://*[@id='new-image']</value>
+  <data name="LOG IN" xml:space="preserve">
+    <value>xpath://*[@type='submit' and contains(text(),'LOG IN')]</value>
   </data>
-  <data name="ClickHereToTest" xml:space="preserve">
-    <value>xpath:/html/body/table/tbody/tr/td[1]/a[1]</value>
+  <data name="LoggedInUser" xml:space="preserve">
+    <value>xpath://div[@class='esh-identity-name']</value>
   </data>
-  <data name="download" xml:space="preserve">
-    <value>xpath://*[@id="main"]/p[2]/a</value>
+  <data name="Login" xml:space="preserve">
+    <value>xpath://*[text()='Login']</value>
   </data>
-  <data name="ElementClick" xml:space="preserve">
-    <value>https://unixpapa.com/js/testmouse.html</value>
-  </data>
-  <data name="FileDownload" xml:space="preserve">
-    <value>https://docs.microsoft.com/en-us/power-bi/sample-financial-download</value>
-  </data>
-  <data name="FileUpload" xml:space="preserve">
-    <value>https://ezgif.com/effects</value>
-  </data>
-  <data name="Google" xml:space="preserve">
-    <value>http://www.google.com</value>
-  </data>
-  <data name="Query" xml:space="preserve">
-    <value>xpath://*[@name='q']</value>
-  </data>
-  <data name="SearchResults" xml:space="preserve">
-    <value>xpath://h1[contains(text(),'Search Results')]</value>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
   </data>
 </root>

@@ -21,7 +21,7 @@ namespace EShopApplicationWebSolution.Features.ApiTests
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Login_EShopApplication")]
-    [NUnit.Framework.CategoryAttribute("ui")]
+    [NUnit.Framework.CategoryAttribute("api")]
     [NUnit.Framework.CategoryAttribute("owner=kritsha")]
     [NUnit.Framework.CategoryAttribute("web")]
     [NUnit.Framework.CategoryAttribute("testplan=574712")]
@@ -32,7 +32,7 @@ namespace EShopApplicationWebSolution.Features.ApiTests
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = new string[] {
-                "ui",
+                "api",
                 "owner=kritsha",
                 "web",
                 "testplan=574712",
@@ -46,7 +46,7 @@ namespace EShopApplicationWebSolution.Features.ApiTests
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/ApiTests", "Login_EShopApplication", "As a user, I want to be able to login to the EShop application", ProgrammingLanguage.CSharp, new string[] {
-                        "ui",
+                        "api",
                         "owner=kritsha",
                         "web",
                         "testplan=574712",
@@ -122,16 +122,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 7
-testRunner.Given("user wants to get Catalog types through \"Catalog Types\" API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("user wants to get Catalog types through \"Catalog Types\" API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-testRunner.When("catalog types API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("catalog types API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
-testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 10
-testRunner.And("the user should be able to get catalog types", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user should be able to get catalog types", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -181,22 +181,22 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 14
-testRunner.Given("user wants to get catalog items through \"Catalog Items\" API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("user wants to get catalog items through \"Catalog Items\" API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 15
-testRunner.When(string.Format("the \"page index\" is \"{0}\"", pageIndex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("the \"page index\" is \"{0}\"", pageIndex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 16
-testRunner.And(string.Format("the \"page size\" is \"{0}\"", pageSize), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("the \"page size\" is \"{0}\"", pageSize), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 17
-testRunner.When("catalog items API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("catalog items API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 18
-testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 19
-testRunner.And("the user should be able to get catalog items for the given page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user should be able to get catalog items for the given page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

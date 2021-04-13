@@ -76,8 +76,14 @@
     <Parameter name="database.DbPwd" value="" />
     <Parameter name="chaosMonkey.Enabled" value="false" />
 
-    <!-- Dev -->
+    <!-- WEB -->
+    <Parameter name="appSettings.url" value="http://eshop.31d164c105ec415cb0bc.eastus.aksapp.io/" />
+    <Parameter name="appSettings.userEmail" value="demouser@microsoft.com" />
+    <Parameter name="appSettings.userPassword" value="Pass@word1" />
+    
+    <!-- API -->
     <Parameter name="appSettings.Env" value="dev" />
+    <Parameter name="appSettings.EShopEndpoint" value="http://eshop.31d164c105ec415cb0bc.eastus.aksapp.io/webshoppingapigw/c/api/v1/catalog/" />
 
     <!-- QA -->
     <!-- <Parameter name="appSettings.Env" value="qa" />-->

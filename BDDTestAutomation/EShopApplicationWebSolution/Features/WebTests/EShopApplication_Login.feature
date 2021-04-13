@@ -1,27 +1,26 @@
-@ui @owner=kritsha @web @testplan= @testsuite=
+@ui @owner=kritsha @web @testplan=574712 @testsuite=574715
 Feature: Login_EShopApplication
-	As a user, I want to be able to login to the EShop application
+As a user, I want to be able to login to the EShop application
 
-@bvt @priority=1
+@testcase=574719 @bvt @priority=1 version=1
 Scenario: Verify that a registered user is able to login into EShop application
-	Given the user is registered to EShop application
 	When user launches EShop application
-	And user clicks on "Login" button 
-	And user enters "email" and "password"
-	When user clicks on "Log in"
-	Then the user should be able to login to the application
-	
-@priority=2
+	And user clicks on "Login" button
+	And user enters "Email" and "Password"
+	And user clicks on "LOG IN" button
+	Then user should be logged-in
+
+@testcase=574720 @priority=2 version=1
 Scenario Outline: Verify that the user is unable to login to EShop Application if user is not registered already
-	Given the user is no registered to EShop application
+	Given the user is not registered to EShop application
 	When user launches EShop application
-	And user clicks on "Login" button 
-	And user enters "email" and "password"
-	When user clicks on "Log in"
+	And user clicks on "Login" button
+	And user enters email and password of "<user>"
+	And user clicks on "LOG IN" button
 	Then the user should not be able to login to the application
 
-	Examples: 
-	| username | password  |
-	| user1    | password1 |
-	| user2    | password2 |
-	| user3    | password3 |
+	Examples:
+		| user         |
+		| InvalidUser1 |
+		| InvalidUser2 |
+		| InvalidUser3 |

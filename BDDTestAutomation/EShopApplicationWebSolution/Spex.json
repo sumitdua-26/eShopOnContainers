@@ -1,0 +1,20 @@
+{
+  "Account": "VSOGD",
+  "Project": "Quality and Reliability Services",
+  "PersonalAccessToken": "",
+  "AreaPath": "Quality and Reliability Services\\Combined Engineering",
+  "IterationPath": "Quality and Reliability Services",
+  "DefaultAssignedTo": "kritsha@microsoft.com",
+  "TestProjectPath": ".\\EShopApplicationWebSolution.csproj",
+  "TestAssemblyPath": ".\\bin\\debug\\EShopApplicationWebSolution.dll",
+  "FeatureFilters": [],
+  "ScenarioFilters": [],
+  "AttachmentTags": [
+    "@attach"
+  ],
+  "AttachmentsPath": "TestData",
+  "AdditionalFields": [],
+  "BddThenAsExpectedResult": "false",
+  "ScenarioOutlineExamplesInline": "false",
+  "QuiteMode": ""
+}

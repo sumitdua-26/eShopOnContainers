@@ -1,0 +1,485 @@
+{
+  "Features": [
+    {
+      "RelativeFolder": "Features\\ApiTests\\EShopCatalogAPI.feature",
+      "Feature": {
+        "Name": "Login_EShopApplication",
+        "Description": "As a user, I want to be able to login to the EShop application",
+        "FeatureElements": [
+          {
+            "Name": "Verify that the user is able to get the Catalog Types by calling Catalog API",
+            "Slug": "verify-that-the-user-is-able-to-get-the-catalog-types-by-calling-catalog-api",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "user wants to get Catalog types through \"Catalog Types\" API",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "catalog types API is called",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "the api should return \"200\" response",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "the user should be able to get catalog types",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              }
+            ],
+            "Tags": [
+              "@testcase=574721",
+              "@bvt",
+              "@priority=1"
+            ],
+            "Result": {
+              "WasExecuted": false,
+              "WasSuccessful": false,
+              "WasProvided": false
+            }
+          },
+          {
+            "Examples": [
+              {
+                "Name": "",
+                "TableArgument": {
+                  "HeaderRow": [
+                    "pageIndex",
+                    "pageSize"
+                  ],
+                  "DataRows": [
+                    [
+                      "0",
+                      "10",
+                      {
+                        "WasExecuted": false,
+                        "WasSuccessful": false,
+                        "WasProvided": true
+                      }
+                    ],
+                    [
+                      "1",
+                      "5",
+                      {
+                        "WasExecuted": false,
+                        "WasSuccessful": false,
+                        "WasProvided": true
+                      }
+                    ]
+                  ]
+                },
+                "Tags": [],
+                "NativeKeyword": "Examples"
+              }
+            ],
+            "Name": "Verify that the user is able to get the catalog items by calling Catalog API",
+            "Slug": "verify-that-the-user-is-able-to-get-the-catalog-items-by-calling-catalog-api",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "user wants to get catalog items through \"Catalog Items\" API",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "the \"page index\" is \"<pageIndex>\"",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "the \"page size\" is \"<pageSize>\"",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "catalog items API is called",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "the api should return \"200\" response",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "the user should be able to get catalog items for the given page",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              }
+            ],
+            "Tags": [
+              "@testcase=574722",
+              "@bvt",
+              "@priority=1"
+            ],
+            "Result": {
+              "WasExecuted": false,
+              "WasSuccessful": false,
+              "WasProvided": false
+            }
+          }
+        ],
+        "Result": {
+          "WasExecuted": false,
+          "WasSuccessful": false,
+          "WasProvided": false
+        },
+        "Tags": [
+          "@api",
+          "@owner=kritsha",
+          "@web",
+          "@testplan=574712",
+          "@testsuite=574716"
+        ]
+      },
+      "Result": {
+        "WasExecuted": false,
+        "WasSuccessful": false,
+        "WasProvided": false
+      }
+    },
+    {
+      "RelativeFolder": "Features\\WebTests\\EShopApplication_Login.feature",
+      "Feature": {
+        "Name": "Login_EShopApplication",
+        "Description": "As a user, I want to be able to login to the EShop application",
+        "FeatureElements": [
+          {
+            "Name": "Verify that a registered user is able to login into EShop application",
+            "Slug": "verify-that-a-registered-user-is-able-to-login-into-eshop-application",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "user launches EShop application",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "user clicks on \"Login\" option",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "user enter Email and Password of \"User1\"",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "user click on \"LOG IN\" button",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "verify if \"User1\" is logged-in",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              }
+            ],
+            "Tags": [
+              "@testcase=574719",
+              "@bvt",
+              "@priority=1"
+            ],
+            "Result": {
+              "WasExecuted": false,
+              "WasSuccessful": false,
+              "WasProvided": false
+            }
+          },
+          {
+            "Examples": [
+              {
+                "Name": "",
+                "TableArgument": {
+                  "HeaderRow": [
+                    "user"
+                  ],
+                  "DataRows": [
+                    [
+                      "InvalidUser1",
+                      {
+                        "WasExecuted": false,
+                        "WasSuccessful": false,
+                        "WasProvided": true
+                      }
+                    ],
+                    [
+                      "InvalidUser2",
+                      {
+                        "WasExecuted": false,
+                        "WasSuccessful": false,
+                        "WasProvided": true
+                      }
+                    ],
+                    [
+                      "InvalidUser3",
+                      {
+                        "WasExecuted": false,
+                        "WasSuccessful": false,
+                        "WasProvided": true
+                      }
+                    ]
+                  ]
+                },
+                "Tags": [],
+                "NativeKeyword": "Examples"
+              }
+            ],
+            "Name": "Verify that the user is unable to login to EShop Application if user is not registered already",
+            "Slug": "verify-that-the-user-is-unable-to-login-to-eshop-application-if-user-is-not-registered-already",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "the user is not registered to EShop application",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "user launches EShop application",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "user clicks on \"Login\" button",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "user enter Email and Password of \"<user>\"",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "user click on \"LOG IN\" button",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "the user should not be able to login to the application",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              }
+            ],
+            "Tags": [
+              "@testcase=574720",
+              "@priority=2"
+            ],
+            "Result": {
+              "WasExecuted": false,
+              "WasSuccessful": false,
+              "WasProvided": false
+            }
+          }
+        ],
+        "Result": {
+          "WasExecuted": false,
+          "WasSuccessful": false,
+          "WasProvided": false
+        },
+        "Tags": [
+          "@ui",
+          "@owner=kritsha",
+          "@web",
+          "@testplan=574712",
+          "@testsuite=574715"
+        ]
+      },
+      "Result": {
+        "WasExecuted": false,
+        "WasSuccessful": false,
+        "WasProvided": false
+      }
+    }
+  ],
+  "Summary": {
+    "Tags": [
+      {
+        "Tag": "@api",
+        "Total": 2,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 2
+      },
+      {
+        "Tag": "@owner=kritsha",
+        "Total": 4,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 4
+      },
+      {
+        "Tag": "@web",
+        "Total": 4,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 4
+      },
+      {
+        "Tag": "@testplan=574712",
+        "Total": 4,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 4
+      },
+      {
+        "Tag": "@testsuite=574716",
+        "Total": 2,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 2
+      },
+      {
+        "Tag": "@ui",
+        "Total": 2,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 2
+      },
+      {
+        "Tag": "@testsuite=574715",
+        "Total": 2,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 2
+      },
+      {
+        "Tag": "@testcase=574721",
+        "Total": 1,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 1
+      },
+      {
+        "Tag": "@bvt",
+        "Total": 3,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 3
+      },
+      {
+        "Tag": "@priority=1",
+        "Total": 3,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 3
+      },
+      {
+        "Tag": "@testcase=574722",
+        "Total": 1,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 1
+      },
+      {
+        "Tag": "@testcase=574719",
+        "Total": 1,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 1
+      },
+      {
+        "Tag": "@testcase=574720",
+        "Total": 1,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 1
+      },
+      {
+        "Tag": "@priority=2",
+        "Total": 1,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 1
+      }
+    ],
+    "Folders": [
+      {
+        "Folder": "Features",
+        "Total": 4,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 4
+      }
+    ],
+    "NotTestedFolders": [
+      {
+        "Folder": "Features",
+        "Total": 0,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 0
+      }
+    ],
+    "Scenarios": {
+      "Total": 4,
+      "Passing": 0,
+      "Failing": 0,
+      "Inconclusive": 4
+    },
+    "Features": {
+      "Total": 2,
+      "Passing": 0,
+      "Failing": 0,
+      "Inconclusive": 2
+    },
+    "FoldersWithTestKinds": [
+      {
+        "Folder": "Features",
+        "Total": 4,
+        "Automated": 4,
+        "Manual": 0,
+        "NotTested": 0
+      }
+    ]
+  },
+  "Configuration": {
+    "GeneratedOn": "13 April 2021 19:56:15"
+  }
+}

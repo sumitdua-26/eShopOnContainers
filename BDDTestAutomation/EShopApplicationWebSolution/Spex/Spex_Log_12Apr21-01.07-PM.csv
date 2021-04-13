@@ -1,0 +1,227 @@
+id,feature,scenario,isBackground,isNew,needsUpdate,testPlanId,testSuiteId,testCaseId,result
+2,Login_EShopApplication,Verify that the user is able to get the Catalog Types by calling Catalog API,False,True,False,574712,574716,574721,"{
+  ""id"": 574721,
+  ""rev"": 1,
+  ""fields"": {
+    ""System.AreaPath"": ""Quality and Reliability Services\\Combined Engineering"",
+    ""System.TeamProject"": ""Quality and Reliability Services"",
+    ""System.IterationPath"": ""Quality and Reliability Services"",
+    ""System.WorkItemType"": ""Test Case"",
+    ""System.State"": ""Design"",
+    ""System.Reason"": ""New"",
+    ""System.AssignedTo"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CreatedDate"": ""2021-04-12T07:37:09.79Z"",
+    ""System.CreatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.ChangedDate"": ""2021-04-12T07:37:09.79Z"",
+    ""System.ChangedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CommentCount"": 0,
+    ""System.Title"": ""Verify that the user is able to get the Catalog Types by calling Catalog API"",
+    ""Microsoft.VSTS.Common.StateChangeDate"": ""2021-04-12T07:37:09.79Z"",
+    ""Microsoft.VSTS.Common.ActivatedDate"": ""2021-04-12T07:37:09.79Z"",
+    ""Microsoft.VSTS.Common.ActivatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""Microsoft.VSTS.Common.Priority"": 1,
+    ""Microsoft.VSTS.TCM.AutomatedTestName"": ""EShopApplicationWebSolution.Features.ApiTests.Login_EShopApplicationFeature.VerifyThatTheUserIsAbleToGetTheCatalogTypesByCallingCatalogAPI"",
+    ""Microsoft.VSTS.TCM.AutomatedTestStorage"": ""C:\\Users\\KRSHARM\\Source\\Repos\\eShopOnContainers\\BDDTestAutomation\\EShopApplicationWebSolution\\.\\bin\\debug\\EShopApplicationWebSolution.dll"",
+    ""Microsoft.VSTS.TCM.AutomatedTestId"": ""c2d966cb-8437-5587-9766-5b71fb9b711b"",
+    ""Microsoft.VSTS.TCM.AutomatedTestType"": ""Functional Test"",
+    ""Microsoft.VSTS.TCM.AutomationStatus"": ""Automated"",
+    ""Microsoft.VSTS.TCM.Steps"": ""<steps id=\""0\"" last=\""5\""><step type=\""ActionStep\"" id=\""2\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;Given&lt;/FONT&gt; user wants to get Catalog types through &lt;FONT color=\""#a31515\""&gt;\""Catalog Types\""&lt;/FONT&gt; API&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""3\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;When&lt;/FONT&gt; catalog types API is called&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""4\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;Then&lt;/FONT&gt; the api should return &lt;FONT color=\""#a31515\""&gt;\""200\""&lt;/FONT&gt; response&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""5\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; the user should be able to get catalog types&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step></steps>"",
+    ""System.Tags"": ""api; bvt; web""
+  },
+  ""relations"": [
+    {
+      ""rel"": ""Microsoft.VSTS.Common.TestedBy-Reverse"",
+      ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574714"",
+      ""attributes"": {
+        ""isLocked"": false,
+        ""name"": ""Tests""
+      }
+    }
+  ],
+  ""_links"": {
+    ""self"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574721""
+    },
+    ""workItemUpdates"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574721/updates""
+    },
+    ""workItemRevisions"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574721/revisions""
+    },
+    ""workItemComments"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574721/comments""
+    },
+    ""html"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_workitems/edit/574721""
+    },
+    ""workItemType"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItemTypes/Test%20Case""
+    },
+    ""fields"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/fields""
+    }
+  },
+  ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574721""
+}"
+3,Login_EShopApplication,Verify that the user is able to get the catalog items by calling Catalog API,False,True,False,574712,574716,574722,"{
+  ""id"": 574722,
+  ""rev"": 1,
+  ""fields"": {
+    ""System.AreaPath"": ""Quality and Reliability Services\\Combined Engineering"",
+    ""System.TeamProject"": ""Quality and Reliability Services"",
+    ""System.IterationPath"": ""Quality and Reliability Services"",
+    ""System.WorkItemType"": ""Test Case"",
+    ""System.State"": ""Design"",
+    ""System.Reason"": ""New"",
+    ""System.AssignedTo"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CreatedDate"": ""2021-04-12T07:37:10.263Z"",
+    ""System.CreatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.ChangedDate"": ""2021-04-12T07:37:10.263Z"",
+    ""System.ChangedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CommentCount"": 0,
+    ""System.Title"": ""Verify that the user is able to get the catalog items by calling Catalog API"",
+    ""Microsoft.VSTS.Common.StateChangeDate"": ""2021-04-12T07:37:10.263Z"",
+    ""Microsoft.VSTS.Common.ActivatedDate"": ""2021-04-12T07:37:10.263Z"",
+    ""Microsoft.VSTS.Common.ActivatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""Microsoft.VSTS.Common.Priority"": 1,
+    ""Microsoft.VSTS.TCM.AutomatedTestName"": ""EShopApplicationWebSolution.Features.ApiTests.Login_EShopApplicationFeature.VerifyThatTheUserIsAbleToGetTheCatalogItemsByCallingCatalogAPI"",
+    ""Microsoft.VSTS.TCM.AutomatedTestStorage"": ""C:\\Users\\KRSHARM\\Source\\Repos\\eShopOnContainers\\BDDTestAutomation\\EShopApplicationWebSolution\\.\\bin\\debug\\EShopApplicationWebSolution.dll"",
+    ""Microsoft.VSTS.TCM.AutomatedTestId"": ""56929233-09fb-5988-b3aa-0cab25312d4e"",
+    ""Microsoft.VSTS.TCM.AutomatedTestType"": ""Functional Test"",
+    ""Microsoft.VSTS.TCM.AutomationStatus"": ""Automated"",
+    ""Microsoft.VSTS.TCM.Steps"": ""<steps id=\""0\"" last=\""7\""><step type=\""ActionStep\"" id=\""2\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;Given&lt;/FONT&gt; user wants to get catalog items through &lt;FONT color=\""#a31515\""&gt;\""Catalog Items\""&lt;/FONT&gt; API&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""3\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;When&lt;/FONT&gt; the &lt;FONT color=\""#a31515\""&gt;\""page index\""&lt;/FONT&gt; is &lt;FONT color=\""#a31515\""&gt;\""@pageIndex\""&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""4\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; the &lt;FONT color=\""#a31515\""&gt;\""page size\""&lt;/FONT&gt; is &lt;FONT color=\""#a31515\""&gt;\""@pageSize\""&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""5\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;When&lt;/FONT&gt; catalog items API is called&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""6\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;Then&lt;/FONT&gt; the api should return &lt;FONT color=\""#a31515\""&gt;\""200\""&lt;/FONT&gt; response&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""7\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; the user should be able to get catalog items for the given page&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step></steps>"",
+    ""Microsoft.VSTS.TCM.Parameters"": ""<parameters><param name=\""pageIndex\"" bind=\""default\""/><param name=\""pageSize\"" bind=\""default\""/></parameters>"",
+    ""Microsoft.VSTS.TCM.LocalDataSource"": ""<NewDataSet><xs:schema id='NewDataSet' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:msdata='urn:schemas-microsoft-com:xml-msdata'><xs:element name='NewDataSet' msdata:IsDataSet='true' msdata:Locale=''><xs:complexType> <xs:choice minOccurs='0' maxOccurs = 'unbounded'><xs:element name='Table1'><xs:complexType><xs:sequence><xs:element name='pageIndex' type='xs:string' minOccurs='0' /><xs:element name='pageSize' type='xs:string' minOccurs='0' /></xs:sequence></xs:complexType></xs:element></xs:choice></xs:complexType></xs:element></xs:schema><Table1><pageIndex>0</pageIndex><pageSize>10</pageSize></Table1><Table1><pageIndex>1</pageIndex><pageSize>5</pageSize></Table1></NewDataSet>"",
+    ""System.Tags"": ""api; bvt; web""
+  },
+  ""relations"": [
+    {
+      ""rel"": ""Microsoft.VSTS.Common.TestedBy-Reverse"",
+      ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574714"",
+      ""attributes"": {
+        ""isLocked"": false,
+        ""name"": ""Tests""
+      }
+    }
+  ],
+  ""_links"": {
+    ""self"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574722""
+    },
+    ""workItemUpdates"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574722/updates""
+    },
+    ""workItemRevisions"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574722/revisions""
+    },
+    ""workItemComments"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574722/comments""
+    },
+    ""html"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_workitems/edit/574722""
+    },
+    ""workItemType"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItemTypes/Test%20Case""
+    },
+    ""fields"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/fields""
+    }
+  },
+  ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574722""
+}"

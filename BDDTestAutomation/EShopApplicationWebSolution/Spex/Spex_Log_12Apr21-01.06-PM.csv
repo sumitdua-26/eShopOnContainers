@@ -1,0 +1,227 @@
+id,feature,scenario,isBackground,isNew,needsUpdate,testPlanId,testSuiteId,testCaseId,result
+2,Login_EShopApplication,Verify that a registered user is able to login into EShop application,False,True,False,574712,574715,574719,"{
+  ""id"": 574719,
+  ""rev"": 1,
+  ""fields"": {
+    ""System.AreaPath"": ""Quality and Reliability Services\\Combined Engineering"",
+    ""System.TeamProject"": ""Quality and Reliability Services"",
+    ""System.IterationPath"": ""Quality and Reliability Services"",
+    ""System.WorkItemType"": ""Test Case"",
+    ""System.State"": ""Design"",
+    ""System.Reason"": ""New"",
+    ""System.AssignedTo"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CreatedDate"": ""2021-04-12T07:36:42.77Z"",
+    ""System.CreatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.ChangedDate"": ""2021-04-12T07:36:42.77Z"",
+    ""System.ChangedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CommentCount"": 0,
+    ""System.Title"": ""Verify that a registered user is able to login into EShop application"",
+    ""Microsoft.VSTS.Common.StateChangeDate"": ""2021-04-12T07:36:42.77Z"",
+    ""Microsoft.VSTS.Common.ActivatedDate"": ""2021-04-12T07:36:42.77Z"",
+    ""Microsoft.VSTS.Common.ActivatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""Microsoft.VSTS.Common.Priority"": 1,
+    ""Microsoft.VSTS.TCM.AutomatedTestName"": ""EShopApplicationWebSolution.Features.WebTests.Login_EShopApplicationFeature.VerifyThatARegisteredUserIsAbleToLoginIntoEShopApplication"",
+    ""Microsoft.VSTS.TCM.AutomatedTestStorage"": ""C:\\Users\\KRSHARM\\Source\\Repos\\eShopOnContainers\\BDDTestAutomation\\EShopApplicationWebSolution\\.\\bin\\debug\\EShopApplicationWebSolution.dll"",
+    ""Microsoft.VSTS.TCM.AutomatedTestId"": ""1dfa112b-f616-5f6e-bc28-f70c38f9c9a9"",
+    ""Microsoft.VSTS.TCM.AutomatedTestType"": ""Functional Test"",
+    ""Microsoft.VSTS.TCM.AutomationStatus"": ""Automated"",
+    ""Microsoft.VSTS.TCM.Steps"": ""<steps id=\""0\"" last=\""6\""><step type=\""ActionStep\"" id=\""2\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;When&lt;/FONT&gt; user launches EShop application&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""3\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; user clicks on &lt;FONT color=\""#a31515\""&gt;\""Login\""&lt;/FONT&gt; option&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""4\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; user enter Email and Password of &lt;FONT color=\""#a31515\""&gt;\""User1\""&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""5\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; user click on &lt;FONT color=\""#a31515\""&gt;\""LOG IN\""&lt;/FONT&gt; button&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""6\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;Then&lt;/FONT&gt; verify if &lt;FONT color=\""#a31515\""&gt;\""User1\""&lt;/FONT&gt; is logged-in&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step></steps>"",
+    ""System.Tags"": ""bvt; ui; web""
+  },
+  ""relations"": [
+    {
+      ""rel"": ""Microsoft.VSTS.Common.TestedBy-Reverse"",
+      ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574650"",
+      ""attributes"": {
+        ""isLocked"": false,
+        ""name"": ""Tests""
+      }
+    }
+  ],
+  ""_links"": {
+    ""self"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574719""
+    },
+    ""workItemUpdates"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574719/updates""
+    },
+    ""workItemRevisions"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574719/revisions""
+    },
+    ""workItemComments"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574719/comments""
+    },
+    ""html"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_workitems/edit/574719""
+    },
+    ""workItemType"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItemTypes/Test%20Case""
+    },
+    ""fields"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/fields""
+    }
+  },
+  ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574719""
+}"
+3,Login_EShopApplication,Verify that the user is unable to login to EShop Application if user is not registered already,False,True,False,574712,574715,574720,"{
+  ""id"": 574720,
+  ""rev"": 1,
+  ""fields"": {
+    ""System.AreaPath"": ""Quality and Reliability Services\\Combined Engineering"",
+    ""System.TeamProject"": ""Quality and Reliability Services"",
+    ""System.IterationPath"": ""Quality and Reliability Services"",
+    ""System.WorkItemType"": ""Test Case"",
+    ""System.State"": ""Design"",
+    ""System.Reason"": ""New"",
+    ""System.AssignedTo"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CreatedDate"": ""2021-04-12T07:36:43.31Z"",
+    ""System.CreatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.ChangedDate"": ""2021-04-12T07:36:43.31Z"",
+    ""System.ChangedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""System.CommentCount"": 0,
+    ""System.Title"": ""Verify that the user is unable to login to EShop Application if user is not registered already"",
+    ""Microsoft.VSTS.Common.StateChangeDate"": ""2021-04-12T07:36:43.31Z"",
+    ""Microsoft.VSTS.Common.ActivatedDate"": ""2021-04-12T07:36:43.31Z"",
+    ""Microsoft.VSTS.Common.ActivatedBy"": {
+      ""displayName"": ""Kritika Sharma"",
+      ""url"": ""https://spsprodwus24.vssps.visualstudio.com/A31be71a9-11f9-4f6d-998a-9fe32f5f14bd/_apis/Identities/18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""_links"": {
+        ""avatar"": {
+          ""href"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+        }
+      },
+      ""id"": ""18acb01e-5cec-6252-b4e5-7427c1ca764f"",
+      ""uniqueName"": ""kritsha@microsoft.com"",
+      ""imageUrl"": ""https://dev.azure.com/VSOGD/_apis/GraphProfile/MemberAvatars/aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm"",
+      ""descriptor"": ""aad.MThhY2IwMWUtNWNlYy03MjUyLWI0ZTUtNzQyN2MxY2E3NjRm""
+    },
+    ""Microsoft.VSTS.Common.Priority"": 2,
+    ""Microsoft.VSTS.TCM.AutomatedTestName"": ""EShopApplicationWebSolution.Features.WebTests.Login_EShopApplicationFeature.VerifyThatTheUserIsUnableToLoginToEShopApplicationIfUserIsNotRegisteredAlready"",
+    ""Microsoft.VSTS.TCM.AutomatedTestStorage"": ""C:\\Users\\KRSHARM\\Source\\Repos\\eShopOnContainers\\BDDTestAutomation\\EShopApplicationWebSolution\\.\\bin\\debug\\EShopApplicationWebSolution.dll"",
+    ""Microsoft.VSTS.TCM.AutomatedTestId"": ""6924d4cf-7eb6-5045-9568-a08b1925bfbd"",
+    ""Microsoft.VSTS.TCM.AutomatedTestType"": ""Functional Test"",
+    ""Microsoft.VSTS.TCM.AutomationStatus"": ""Automated"",
+    ""Microsoft.VSTS.TCM.Steps"": ""<steps id=\""0\"" last=\""7\""><step type=\""ActionStep\"" id=\""2\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;Given&lt;/FONT&gt; the user is not registered to EShop application&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""3\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;When&lt;/FONT&gt; user launches EShop application&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""4\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; user clicks on &lt;FONT color=\""#a31515\""&gt;\""Login\""&lt;/FONT&gt; button&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""5\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; user enter Email and Password of &lt;FONT color=\""#a31515\""&gt;\""@user\""&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""6\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;And&lt;/FONT&gt; user click on &lt;FONT color=\""#a31515\""&gt;\""LOG IN\""&lt;/FONT&gt; button&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step><step type=\""ActionStep\"" id=\""7\""><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&lt;FONT face=\""Consolas\"" size=\""2\""&gt;&lt;FONT color=\""#0078d7\""&gt;Then&lt;/FONT&gt; the user should not be able to login to the application&lt;/FONT&gt;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><parameterizedString isformatted=\""true\"">&lt;DIV&gt;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;/DIV&gt;</parameterizedString><description /></step></steps>"",
+    ""Microsoft.VSTS.TCM.Parameters"": ""<parameters><param name=\""user\"" bind=\""default\""/></parameters>"",
+    ""Microsoft.VSTS.TCM.LocalDataSource"": ""<NewDataSet><xs:schema id='NewDataSet' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:msdata='urn:schemas-microsoft-com:xml-msdata'><xs:element name='NewDataSet' msdata:IsDataSet='true' msdata:Locale=''><xs:complexType> <xs:choice minOccurs='0' maxOccurs = 'unbounded'><xs:element name='Table1'><xs:complexType><xs:sequence><xs:element name='user' type='xs:string' minOccurs='0' /></xs:sequence></xs:complexType></xs:element></xs:choice></xs:complexType></xs:element></xs:schema><Table1><user>InvalidUser1</user></Table1><Table1><user>InvalidUser2</user></Table1><Table1><user>InvalidUser3</user></Table1></NewDataSet>"",
+    ""System.Tags"": ""ui; web""
+  },
+  ""relations"": [
+    {
+      ""rel"": ""Microsoft.VSTS.Common.TestedBy-Reverse"",
+      ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574650"",
+      ""attributes"": {
+        ""isLocked"": false,
+        ""name"": ""Tests""
+      }
+    }
+  ],
+  ""_links"": {
+    ""self"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574720""
+    },
+    ""workItemUpdates"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574720/updates""
+    },
+    ""workItemRevisions"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574720/revisions""
+    },
+    ""workItemComments"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574720/comments""
+    },
+    ""html"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_workitems/edit/574720""
+    },
+    ""workItemType"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItemTypes/Test%20Case""
+    },
+    ""fields"": {
+      ""href"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/fields""
+    }
+  },
+  ""url"": ""https://dev.azure.com/VSOGD/7cc147bc-f0ac-41f0-9108-0c8d95d70181/_apis/wit/workItems/574720""
+}"

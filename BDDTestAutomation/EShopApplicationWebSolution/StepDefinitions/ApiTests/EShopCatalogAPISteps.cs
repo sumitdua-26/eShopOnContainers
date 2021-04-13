@@ -10,12 +10,13 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace EShopApplicationWebSolution.StepDefinitions.ApiTests
+namespace EShopApplicationWebSolution.StepDefinitions
 {
     using System;
     using System.Configuration;
     using System.Net.Http;
     using Bdd.Core.Api.StepDefinitions;
+    using EShopApplicationWebSolution.Constants;
     using Newtonsoft.Json.Linq;
     using NUnit.Framework;
     using TechTalk.SpecFlow;
@@ -49,8 +50,7 @@ namespace EShopApplicationWebSolution.StepDefinitions.ApiTests
         [When(@"the ""(.*)"" is ""(.*)""")]
         public void WhenThePageIndexIs(string parameterName, string parameterValue)
         {
-            string entityToAppend = parameterName.Replace(" ", "") + "=" + parameterValue;
-            this.endpoint = this.endpoint + entityToAppend + "&";
+            this.endpoint = this.AppendParameterToURL(parameterName, parameterValue);
         }
 
         [Then(@"the api should return ""(.*)"" response")]
@@ -62,13 +62,22 @@ namespace EShopApplicationWebSolution.StepDefinitions.ApiTests
         [Then(@"the user should be able to get catalog types")]
         public void ThenTheUserShouldBeAbleToGetCatalogTypes()
         {
-            
+            JArray catalogTypes = JArray.Parse(this.ScenarioContext.Get<string>("jsonResponse"));
+            Assert.AreEqual(catalogTypes.Count, Constants.catalogTypeCount);
         }
 
         [Then(@"the user should be able to get catalog items for the given page")]
         public void ThenTheUserShouldBeAbleToGetCatalogItemsForTheGivenPage()
         {
-            
+
+        }
+        private string AppendParameterToURL(string parameterName, string parameterValue)
+        {
+            string url;
+            string entityToAppend = parameterName.Replace(" ", "") + "=" + parameterValue;
+            url = this.endpoint + entityToAppend + "&";
+
+            return url;
         }
     }
 }

@@ -24,8 +24,8 @@ namespace EShopApplicationWebSolution.Features.ApiTests
     [NUnit.Framework.CategoryAttribute("ui")]
     [NUnit.Framework.CategoryAttribute("owner=kritsha")]
     [NUnit.Framework.CategoryAttribute("web")]
-    [NUnit.Framework.CategoryAttribute("testplan=")]
-    [NUnit.Framework.CategoryAttribute("testsuite=")]
+    [NUnit.Framework.CategoryAttribute("testplan=574712")]
+    [NUnit.Framework.CategoryAttribute("testsuite=574716")]
     public partial class Login_EShopApplicationFeature
     {
         
@@ -35,8 +35,8 @@ namespace EShopApplicationWebSolution.Features.ApiTests
                 "ui",
                 "owner=kritsha",
                 "web",
-                "testplan=",
-                "testsuite="};
+                "testplan=574712",
+                "testsuite=574716"};
         
 #line 1 "EShopCatalogAPI.feature"
 #line hidden
@@ -45,12 +45,12 @@ namespace EShopApplicationWebSolution.Features.ApiTests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/ApiTests", "Login_EShopApplication", "\tAs a user, I want to be able to login to the EShop application", ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/ApiTests", "Login_EShopApplication", "As a user, I want to be able to login to the EShop application", ProgrammingLanguage.CSharp, new string[] {
                         "ui",
                         "owner=kritsha",
                         "web",
-                        "testplan=",
-                        "testsuite="});
+                        "testplan=574712",
+                        "testsuite=574716"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -90,11 +90,13 @@ namespace EShopApplicationWebSolution.Features.ApiTests
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify that the user is able to get the Catalog Types by calling Catalog API")]
+        [NUnit.Framework.CategoryAttribute("testcase=574721")]
         [NUnit.Framework.CategoryAttribute("bvt")]
         [NUnit.Framework.CategoryAttribute("priority=1")]
         public virtual void VerifyThatTheUserIsAbleToGetTheCatalogTypesByCallingCatalogAPI()
         {
             string[] tagsOfScenario = new string[] {
+                    "testcase=574721",
                     "bvt",
                     "priority=1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
@@ -120,16 +122,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 7
- testRunner.Given("user wants to get Catalog types", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("user wants to get Catalog types through \"Catalog Types\" API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
- testRunner.When("\"catalog types\" API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("catalog types API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 10
- testRunner.And("the user should be able to get catalog types", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("the user should be able to get catalog types", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -138,6 +140,7 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify that the user is able to get the catalog items by calling Catalog API")]
         [NUnit.Framework.CategoryAttribute("bddcore-ex")]
+        [NUnit.Framework.CategoryAttribute("testcase=574722")]
         [NUnit.Framework.CategoryAttribute("bvt")]
         [NUnit.Framework.CategoryAttribute("priority=1")]
         [NUnit.Framework.TestCaseAttribute("0", "10", null)]
@@ -145,6 +148,7 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void VerifyThatTheUserIsAbleToGetTheCatalogItemsByCallingCatalogAPI(string pageIndex, string pageSize, string[] exampleTags)
         {
             string[] @__tags = new string[] {
+                    "testcase=574722",
                     "bvt",
                     "priority=1"};
             if ((exampleTags != null))
@@ -177,22 +181,22 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 14
- testRunner.Given("user wants to get catalog items", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("user wants to get catalog items through \"Catalog Items\" API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 15
- testRunner.When(string.Format("the page index is {0}", pageIndex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When(string.Format("the \"page index\" is \"{0}\"", pageIndex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 16
- testRunner.And(string.Format("the page size is {0}", pageSize), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("the \"page size\" is \"{0}\"", pageSize), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 17
- testRunner.When("\"catalog items\" API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("catalog items API is called", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 18
- testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 19
- testRunner.And("the user should be able to get catalog items for the given page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("the user should be able to get catalog items for the given page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -200,6 +204,7 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify that the user is able to get the catalog items by calling Catalog API")]
+        [NUnit.Framework.CategoryAttribute("testcase=574722")]
         [NUnit.Framework.CategoryAttribute("bvt")]
         [NUnit.Framework.CategoryAttribute("priority=1")]
         [NUnit.Framework.CategoryAttribute("bddcore-wrapper")]

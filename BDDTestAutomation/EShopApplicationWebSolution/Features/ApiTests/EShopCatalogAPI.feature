@@ -16,7 +16,8 @@ Scenario Outline: Verify that the user is able to get the catalog items by calli
 	And the "page size" is "<pageSize>"
 	When catalog items API is called
 	Then the api should return "200" response
-	And the user should be able to get catalog items for the given page
+	And response should return pageSize as <pageSize>
+	And response should return pageIndex as <pageIndex>
 
 	Examples:
 		| pageIndex | pageSize |

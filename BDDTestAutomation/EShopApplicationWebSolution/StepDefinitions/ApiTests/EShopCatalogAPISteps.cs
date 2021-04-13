@@ -50,7 +50,7 @@ namespace EShopApplicationWebSolution.StepDefinitions
         [When(@"the ""(.*)"" is ""(.*)""")]
         public void WhenThePageIndexIs(string parameterName, string parameterValue)
         {
-            this.endpoint = this.AppendParameterToURL(parameterName, parameterValue);
+            this.url = this.AppendParameterToURL(parameterName, parameterValue);
         }
 
         [Then(@"the api should return ""(.*)"" response")]
@@ -66,16 +66,25 @@ namespace EShopApplicationWebSolution.StepDefinitions
             Assert.AreEqual(catalogTypes.Count, Constants.catalogTypeCount);
         }
 
-        [Then(@"the user should be able to get catalog items for the given page")]
-        public void ThenTheUserShouldBeAbleToGetCatalogItemsForTheGivenPage()
+        [Then(@"response should return pageSize as (.*)")]
+        public void ThenResponseShouldReturnPagesizeAs(int pageSize)
         {
-
+            JObject catalogueItems = JObject.Parse(this.ScenarioContext.Get<string>("jsonResponse"));
+            Assert.AreEqual(Convert.ToInt32(catalogueItems.SelectToken("$.pageSize")), pageSize);
         }
+
+        [Then(@"response should return pageIndex as (.*)")]
+        public void ThenResponseShouldReturnPageIndexAs(int pageIndex)
+        {
+            JObject catalogueItems = JObject.Parse(this.ScenarioContext.Get<string>("jsonResponse"));
+            Assert.AreEqual(Convert.ToInt32(catalogueItems.SelectToken("$.pageIndex")), pageIndex);
+        }
+
         private string AppendParameterToURL(string parameterName, string parameterValue)
         {
             string url;
             string entityToAppend = parameterName.Replace(" ", "") + "=" + parameterValue;
-            url = this.endpoint + entityToAppend + "&";
+            url = this.url + entityToAppend + "&";
 
             return url;
         }

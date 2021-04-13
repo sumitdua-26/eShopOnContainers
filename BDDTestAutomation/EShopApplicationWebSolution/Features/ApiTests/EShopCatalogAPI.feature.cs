@@ -196,7 +196,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Then("the api should return \"200\" response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 19
- testRunner.And("the user should be able to get catalog items for the given page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("response should return pageSize as {0}", pageSize), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+ testRunner.And(string.Format("response should return pageIndex as {0}", pageIndex), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

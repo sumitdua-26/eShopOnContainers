@@ -60,7 +60,7 @@ namespace EShopApplicationWebSolution.StepDefinitions
         [Then(@"user should be logged-in")]
         public void ThenVerifyIfUserIsLogged_In()
         {
-            IWebElement isUserLoggedIn = this.Get<ElementPage>().FindElementByXPath(Resources.ResourceManager.GetString("LoggedInUser"));
+            IWebElement isUserLoggedIn = this.Get<ElementPage>().FindElementByXPath("LoggedInUser");
             string loggedInUserId = isUserLoggedIn.Text;
 
             Assert.AreEqual(loggedInUserId, ConfigurationManager.AppSettings.Get("userEmail"), $"Login Falied");

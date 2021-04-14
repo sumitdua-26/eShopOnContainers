@@ -27,7 +27,6 @@ namespace EShopApplicationWebSolution.StepDefinitions
         private string endpoint;
         private string url;
         private HttpResponseMessage httpResponse;
-        private JObject responseObject;
 
         [Given(@"user wants to get Catalog types through ""(.*)"" API")]
         [Given(@"user wants to get catalog items through ""(.*)"" API")]

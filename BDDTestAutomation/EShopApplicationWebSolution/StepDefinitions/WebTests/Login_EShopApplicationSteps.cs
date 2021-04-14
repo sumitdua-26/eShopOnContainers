@@ -25,12 +25,6 @@ namespace EShopApplicationWebSolution.StepDefinitions
     [Binding]
     public class Login_EShopApplicationSteps : WebStepDefinitionBase
     {
-        [Given(@"the user is not registered to EShop application")]
-        public void GivenTheUserIsNotRegisteredToEShopApplication()
-        {
-
-        }
-
         [When(@"user launches EShop application")]
         public void WhenUserLaunchesEShopApplication()
         {

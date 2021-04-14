@@ -12,15 +12,14 @@ Scenario: Verify that a registered user is able to login into EShop application
 
 @testcase=574720 @priority=2 version=1
 Scenario Outline: Verify that the user is unable to login to EShop Application if user is not registered already
-	Given the user is not registered to EShop application
 	When user launches EShop application
 	And user clicks on "Login" button
-	And user enters email and password of "<user>"
+	And user enters "Email" and "Password"
 	And user clicks on "LOG IN" button
 	Then the user should not be able to login to the application
 
 	Examples:
-		| user         |
-		| InvalidUser1 |
-		| InvalidUser2 |
-		| InvalidUser3 |
+		| useremail    | password  |
+		| InvalidUser1 | password1 |
+		| InvalidUser2 | password2 |
+		| InvalidUser3 | password3 |

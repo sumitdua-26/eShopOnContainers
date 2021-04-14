@@ -22,7 +22,7 @@ namespace Bdd.Core.Hooks
     /// https://github.com/techtalk/SpecFlow/wiki/Hooks#supported-hook-attributes
     /// </summary>
     [Binding]
-    public class Constants : WebProjectTestBase
+    public class AppTestBase : WebProjectTestBase
     {
         private const int Order = 1;
 

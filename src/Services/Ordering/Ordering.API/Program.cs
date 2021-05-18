@@ -94,6 +94,11 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.API
                 .WriteTo.Console()
                 .WriteTo.Seq(string.IsNullOrWhiteSpace(seqServerUrl) ? "http://seq" : seqServerUrl)
                 .WriteTo.Http(string.IsNullOrWhiteSpace(logstashUrl) ? "http://logstash:8080" : logstashUrl)
+                .WriteTo.Elasticsearch(new Serilog.Sinks.Elasticsearch.ElasticsearchSinkOptions (new Uri(configuration["Serilog:ElasticSearchConfiguration:Uri"]))
+                    {
+                        IndexFormat = $"eshops-logs-{AppName}-{DateTime.UtcNow:yyyy-MM}",
+                        AutoRegisterTemplate = true
+                    })
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
         }

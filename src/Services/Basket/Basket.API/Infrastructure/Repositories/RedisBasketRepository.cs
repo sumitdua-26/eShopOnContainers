@@ -56,7 +56,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Reposit
                 return null;
             }
 
-            _logger.LogInformation("Basket item persisted succesfully.");
+            _logger.LogInformation("Basket item persisted succesfully from Redis.");
 
             return await GetBasketAsync(basket.BuyerId);
         }

@@ -28,14 +28,14 @@ namespace GrpcBasket
             if (data != null)
             {
                 context.Status = new Status(StatusCode.OK, $"Basket with id {request.Id} do exist");
-
+                _logger.LogInformation("Basket with id {request} already exists. Method \"MapToCustomerBasketResponse\" called from {Method}",request.Id, context.Method);
                 return MapToCustomerBasketResponse(data);
             }
             else
             {
                 context.Status = new Status(StatusCode.NotFound, $"Basket with id {request.Id} do not exist");
             }
-
+            _logger.LogInformation("Basket with id {request} do not exist. New \"CustomerBasketResponse\" will add the product to Basket",request.Id);
             return new CustomerBasketResponse();
         }
 
@@ -49,7 +49,8 @@ namespace GrpcBasket
 
             if (response != null)
             {
-                return MapToCustomerBasketResponse(response);
+                _logger.LogInformation("Method \"MapToCustomerBasketResponse\" called from {Method}", context.Method);
+                return MapToCustomerBasketResponse(response);                
             }
 
             context.Status = new Status(StatusCode.NotFound, $"Basket with buyer id {request.Buyerid} do not exist");
@@ -75,6 +76,8 @@ namespace GrpcBasket
                 Unitprice = (double)item.UnitPrice
             }));
 
+            _logger.LogInformation("Method Execution \"MapToCustomerBasketResponse\" ends");
+            _logger.LogInformation("Response from Method \"MapToCustomerBasketResponse\": {Response}", response);
             return response;
         }
 

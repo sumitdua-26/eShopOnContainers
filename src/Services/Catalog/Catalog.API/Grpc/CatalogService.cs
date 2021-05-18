@@ -64,6 +64,7 @@ namespace Catalog.API.Grpc
 
         public override async Task<PaginatedItemsResponse> GetItemsByIds(CatalogItemsRequest request, ServerCallContext context)
         {
+            _logger.LogInformation("Begin grpc call from method {Method} for product id(s) {Id}", context.Method, request.Ids);
             if (!string.IsNullOrEmpty(request.Ids))
             {
                 var items = await GetItemsByIdsAsync(request.Ids);

@@ -29,8 +29,10 @@ namespace Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator.Services
             {
                 var client = new Basket.BasketClient(channel);
                 _logger.LogDebug("grpc client created, request = {@id}", id);
+                _logger.LogInformation("grpc client created, request = {@id}", id);
                 var response = await client.GetBasketByIdAsync(new BasketRequest { Id = id });
                 _logger.LogDebug("grpc response {@response}", response);
+                _logger.LogInformation("grpc response {@response}", response);
 
                 return MapToBasketData(response);
             });
@@ -42,8 +44,10 @@ namespace Microsoft.eShopOnContainers.Web.Shopping.HttpAggregator.Services
             {
                 var client = new Basket.BasketClient(channel);
                 _logger.LogDebug("Grpc update basket currentBasket {@currentBasket}", currentBasket);
+                _logger.LogInformation("Grpc update basket currentBasket {@currentBasket}", currentBasket);
                 var request = MapToCustomerBasketRequest(currentBasket);
                 _logger.LogDebug("Grpc update basket request {@request}", request);
+                _logger.LogInformation("Grpc update basket request {@request}", request);
 
                 return await client.UpdateBasketAsync(request);
             });

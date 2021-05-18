@@ -39,8 +39,8 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
         [ProducesResponseType(typeof(CustomerBasket), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<CustomerBasket>> GetBasketByIdAsync(string id)
         {
+            _logger.LogInformation("Controller Method \"GetBasketByIdAsync\" Execution starts");
             var basket = await _repository.GetBasketAsync(id);
-
             return Ok(basket ?? new CustomerBasket(id));
         }
 
@@ -48,6 +48,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
         [ProducesResponseType(typeof(CustomerBasket), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<CustomerBasket>> UpdateBasketAsync([FromBody] CustomerBasket value)
         {
+            _logger.LogInformation("Controller Method \"UpdateBasketAsync\" Execution starts");
             return Ok(await _repository.UpdateBasketAsync(value));
         }
 

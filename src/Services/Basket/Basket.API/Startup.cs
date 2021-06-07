@@ -34,6 +34,7 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
+using Serilog;
 
 namespace Microsoft.eShopOnContainers.Services.Basket.API
 {
@@ -205,7 +206,15 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
                    setup.OAuthClientId("basketswaggerui");
                    setup.OAuthAppName("Basket Swagger UI");
                });
-
+            //Serilog Middleware Request Logging
+            app.UseSerilogRequestLogging(options => 
+            {
+                options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+                {
+                    diagnosticContext.Set("ClientIP", httpContext.Connection.RemoteIpAddress.ToString());
+                };
+            });
+            
             app.UseRouting();
             app.UseCors("CorsPolicy");
             ConfigureAuth(app);

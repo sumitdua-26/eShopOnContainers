@@ -8,6 +8,7 @@ using Serilog;
 using System;
 using System.IO;
 using System.Net;
+using Serilog.Sinks.Elasticsearch;
 
 namespace Microsoft.eShopOnContainers.Services.Basket.API
 {
@@ -79,10 +80,13 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
                 .MinimumLevel.Verbose()
                 .Enrich.WithProperty("ApplicationContext", AppName)
                 .Enrich.FromLogContext()
+                .Enrich.WithHttpRequestId()
+                .Enrich.WithHttpRequestUrl()
+                .Enrich.WithCorrelationIdHeader()
                 .WriteTo.Console()
                 .WriteTo.Seq(string.IsNullOrWhiteSpace(seqServerUrl) ? "http://seq" : seqServerUrl)
                 .WriteTo.Http(string.IsNullOrWhiteSpace(logstashUrl) ? "http://logstash:8080" : logstashUrl)
-                .WriteTo.Elasticsearch(new Serilog.Sinks.Elasticsearch.ElasticsearchSinkOptions (new Uri(configuration["Serilog:ElasticSearchConfiguration:Uri"]))
+                .WriteTo.Elasticsearch(new ElasticsearchSinkOptions (new Uri(configuration["Serilog:ElasticSearchConfiguration:Uri"]))
                     {
                         IndexFormat = $"eshops-logs-{AppName}-{DateTime.UtcNow:yyyy-MM}",
                         AutoRegisterTemplate = true

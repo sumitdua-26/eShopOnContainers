@@ -28,7 +28,7 @@ namespace GrpcBasket
             if (data != null)
             {
                 context.Status = new Status(StatusCode.OK, $"Basket with id {request.Id} do exist");
-                _logger.LogInformation("Basket with id {request} already exists. Method \"MapToCustomerBasketResponse\" called from {Method}",request.Id, context.Method);
+                _logger.LogInformation("Method \"MapToCustomerBasketResponse\" called from {Method}", context.Method);
                 return MapToCustomerBasketResponse(data);
             }
             else
@@ -42,7 +42,7 @@ namespace GrpcBasket
         public override async Task<CustomerBasketResponse> UpdateBasket(CustomerBasketRequest request, ServerCallContext context)
         {
             _logger.LogInformation("Begin grpc call BasketService.UpdateBasketAsync for buyer id {Buyerid}", request.Buyerid);
-
+            _logger.LogInformation("Method \"MapToCustomerBasket\" called from {Method}", context.Method);
             var customerBasket = MapToCustomerBasket(request);
 
             var response = await _repository.UpdateBasketAsync(customerBasket);
@@ -76,8 +76,8 @@ namespace GrpcBasket
                 Unitprice = (double)item.UnitPrice
             }));
 
-            _logger.LogInformation("Method Execution \"MapToCustomerBasketResponse\" ends");
             _logger.LogInformation("Response from Method \"MapToCustomerBasketResponse\": {Response}", response);
+            _logger.LogInformation("Method Execution \"MapToCustomerBasketResponse\" ends");
             return response;
         }
 
@@ -97,8 +97,10 @@ namespace GrpcBasket
                 ProductName = item.Productname,
                 Quantity = item.Quantity,
                 UnitPrice = (decimal)item.Unitprice
-            }));
+            })); 
 
+            _logger.LogInformation("Response from Method \"MapToCustomerBasket\": {Response}", response);
+            _logger.LogInformation("Method Execution \"MapToCustomerBasket\" ends");
             return response;
         }
     }

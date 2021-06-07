@@ -10,6 +10,7 @@ using System;
 using System.Net;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using SerilogTimings;
 
 namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
 {
@@ -40,8 +41,11 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
         public async Task<ActionResult<CustomerBasket>> GetBasketByIdAsync(string id)
         {
             _logger.LogInformation("Controller Method \"GetBasketByIdAsync\" Execution starts");
-            var basket = await _repository.GetBasketAsync(id);
-            return Ok(basket ?? new CustomerBasket(id));
+            using (Operation.Time("Retrieving Basket for {BasketId}", id))
+            {
+                var basket = await _repository.GetBasketAsync(id);
+                return Ok(basket ?? new CustomerBasket(id));                
+            }
         }
 
         [HttpPost]
@@ -49,7 +53,10 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
         public async Task<ActionResult<CustomerBasket>> UpdateBasketAsync([FromBody] CustomerBasket value)
         {
             _logger.LogInformation("Controller Method \"UpdateBasketAsync\" Execution starts");
+            using (Operation.Time("Updating Basket"))
+            {
             return Ok(await _repository.UpdateBasketAsync(value));
+            }
         }
 
         [Route("checkout")]

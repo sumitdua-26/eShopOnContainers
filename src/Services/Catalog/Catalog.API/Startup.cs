@@ -31,6 +31,7 @@ using System;
 using System.Data.Common;
 using System.IO;
 using System.Reflection;
+using Serilog;
 
 namespace Microsoft.eShopOnContainers.Services.Catalog.API
 {
@@ -81,6 +82,15 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API
              {
                  c.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "Catalog.API V1");
              });
+
+            //Serilog Middleware Request Logging
+            app.UseSerilogRequestLogging(options => 
+            {
+                options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+                {
+                    diagnosticContext.Set("ClientIP", httpContext.Connection.RemoteIpAddress.ToString());
+                };
+            });
 
             app.UseRouting();
             app.UseCors("CorsPolicy");
